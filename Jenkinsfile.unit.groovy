@@ -35,7 +35,8 @@ pipeline {
             cleanWs()
         }
         success {  
-             echo "Database engine is ${JOB_NAME}"
+             echo "El nombre del trabajo es: ${JOB_NAME}"
+             echo "El numero de ejecucion es: ${EXECUTOR_NUMBER}"
              
          }  
         
