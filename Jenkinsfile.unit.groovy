@@ -35,7 +35,7 @@ pipeline {
             cleanWs()
         }
         success {  
-             echo 'This will run only if successful'  
+             cho "Database engine is ${JOB_NAME}"
              
          }  
         
