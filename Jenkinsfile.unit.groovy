@@ -36,7 +36,7 @@ pipeline {
         }
         success {  
              echo 'This will run only if successful'  
-             echo $JOB_NAME
+             echo "Database engine is ${DB_ENGINE}"
          }  
         
         
