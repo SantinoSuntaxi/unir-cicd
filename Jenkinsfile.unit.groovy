@@ -27,11 +27,15 @@ pipeline {
                 archiveArtifacts artifacts: 'results/*.xml'
             }
         }
+       
     }
     post {
         always {
             junit 'results/*_result.xml'
             cleanWs()
         }
+        success {  
+             echo 'This will run only if successful'  
+         }  
     }
 }
