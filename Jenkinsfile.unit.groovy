@@ -36,7 +36,7 @@ pipeline {
         }
         success {  
              echo 'This will run only if successful'  
-             echo ${env.JOB_NAME}
+             echo $JOB_NAME
          }  
         
         failure {  
