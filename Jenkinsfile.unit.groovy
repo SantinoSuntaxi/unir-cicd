@@ -35,7 +35,7 @@ pipeline {
             cleanWs()
         }
         success {  
-             cho "Database engine is ${JOB_NAME}"
+             echo "Database engine is ${JOB_NAME}"
              
          }  
         
